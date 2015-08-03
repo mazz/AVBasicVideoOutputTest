@@ -11,7 +11,7 @@
 # define ONE_FRAME_DURATION 0.03
 
 @interface SCRPixelBufferService()
-@property (weak, nonatomic, nonnull) id <SCRPixelBufferServiceDelegate> delegate;
+@property (weak, nonatomic, nullable) id <SCRPixelBufferServiceDelegate> delegate;
 @property (strong, nonatomic, nonnull) AVPlayer *player;
 @property (strong, nonatomic, nonnull) dispatch_queue_t myVideoOutputQueue;
 @property (strong, nonatomic, nonnull) AVPlayerItemVideoOutput *videoOutput;

@@ -16,7 +16,7 @@
 @property (strong, nonatomic, nonnull) NSArray *assets;
 @property (strong, nonatomic, nonnull) NSArray *playerItems;
 @property (strong, nonatomic, nonnull) NSArray *players;
-@property (weak, nonatomic, nonnull) IBOutlet APLEAGLView *playerView;
+@property (weak, nonatomic, nullable) IBOutlet APLEAGLView *playerView;
 @end
 
 @implementation ViewController
