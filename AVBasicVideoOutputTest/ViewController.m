@@ -13,9 +13,9 @@
 
 @interface ViewController () <SCRPixelBufferServiceDelegate>
 @property (strong, nonatomic, nonnull) NSArray *pixelBufferServices;
-@property (strong, nonatomic, nullable) NSArray *assets;
-@property (strong, nonatomic, nullable) NSArray *playerItems;
-@property (strong, nonatomic, nullable) NSArray *players;
+@property (strong, nonatomic, nonnull) NSArray *assets;
+@property (strong, nonatomic, nonnull) NSArray *playerItems;
+@property (strong, nonatomic, nonnull) NSArray *players;
 @property (weak, nonatomic, nonnull) IBOutlet APLEAGLView *playerView;
 @end
 
@@ -32,9 +32,6 @@
 
 - (void)setupPlayers
 {
-    self.assets = nil;
-    self.playerItems = nil;
-    self.players = nil;
     NSMutableArray *assets = [NSMutableArray array];
     NSMutableArray *playerItems = [NSMutableArray array];
     NSMutableArray *players = [NSMutableArray array];
